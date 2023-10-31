@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/couleur_test_layout"
+    android:background="@drawable/redtest"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.esprit.kidsschool.fragments.CouleurTestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:paddingTop="50dp"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/couleur_drop_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/couleur_rep_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/couleur_rep1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/repblue" />
+
+            <ImageView
+                android:id="@+id/couleur_rep2"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/repred"
+                android:layout_below="@id/couleur_rep1" />
+
+            <ImageView
+                android:id="@+id/couleur_rep3"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:src="@drawable/repgreen"
+                android:layout_below="@id/couleur_rep2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_back_couleurtest"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"/>
+
+</FrameLayout>

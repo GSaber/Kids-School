@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/alphabet_test_layout"
+    android:background="@drawable/ctest"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.esprit.kidsschool.fragments.AlphabetTestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:paddingTop="50dp"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:id="@+id/test">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <RelativeLayout
+                android:id="@+id/bottomlinear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/toplinear">
+
+                <ImageView
+                    android:id="@+id/img_rep1"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/reph" />
+
+                <ImageView
+                    android:layout_below="@id/img_rep1"
+                    android:id="@+id/img_rep2"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/repf" />
+
+
+                <ImageView
+                    android:layout_below="@id/img_rep2"
+                    android:id="@+id/img_rep3"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/repc" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_back_alphabettest"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"/>
+
+</FrameLayout>

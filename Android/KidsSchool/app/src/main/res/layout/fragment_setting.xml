@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backsetting"
+    tools:context="com.esprit.kidsschool.fragments.SettingFragment">
+
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#663311"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:paddingTop="80dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="60dp"
+            android:id="@+id/lv_childrens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/btnaddchild"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/colorAccent"
+        fab:fab_colorRipple="@color/com_facebook_blue"/>
+    <ImageButton
+        android:id="@+id/btn_back_setting2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:layout_alignParentLeft="true"/>
+
+</FrameLayout>

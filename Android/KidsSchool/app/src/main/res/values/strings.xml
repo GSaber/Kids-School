@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kids School</string>
+    <string name="facebook_app_id">197636570644206</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_extra">ExtraActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_test">TestActivity</string>
+</resources>

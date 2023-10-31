@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/examen_layout"
+    android:background="@drawable/tyrannosaurustest"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.esprit.kidsschool.fragments.ExamenFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:paddingTop="50dp"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:id="@+id/examen_drop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/examen_rep_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/examen_rep1"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:src="@drawable/reptyrannosaurus" />
+
+            <ImageView
+                android:id="@+id/examen_rep2"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/repstegosaurus" />
+
+            <ImageView
+                android:id="@+id/examen_rep3"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:src="@drawable/repankylosaurus" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_back_exam"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"/>
+    <TextView
+        android:id="@+id/tv_name_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:textColor="#663311"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"/>
+
+</FrameLayout>

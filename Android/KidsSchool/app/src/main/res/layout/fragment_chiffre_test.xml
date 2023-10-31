@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chiffre_test_layout"
+    android:background="@drawable/fourtest"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.esprit.kidsschool.fragments.ChiffreTestFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chiffre_test">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="70dp"
+            android:paddingTop="50dp"
+            android:paddingRight="100dp"
+            android:paddingLeft="100dp"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <RelativeLayout
+                android:id="@+id/chiffre_drop_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/chiffre_rep_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/chiffre_rep1"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/repthree" />
+
+                <ImageView
+                    android:id="@+id/chiffre_rep2"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/repfive" />
+
+                <ImageView
+                    android:id="@+id/chiffre_rep3"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/repfour" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_back_chiffretest"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back"/>
+
+</FrameLayout>
